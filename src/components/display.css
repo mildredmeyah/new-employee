@@ -1,0 +1,28 @@
+
+
+table {
+    border: 2px solid black;
+    flex-direction: column, row;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+ th{
+    border: 2px solid black;
+    
+    flex-direction: column, row;
+    border-collapse: collapse;
+    width: 100%;
+
+ }
+ td{
+    border: 2px solid black;
+    font-weight: 500px;
+    flex-direction: column, row;
+    border-collapse: collapse;
+    width: 100%;
+
+ }
+thead td {
+    font-weight: 800px;
+}
