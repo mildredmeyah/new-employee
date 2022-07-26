@@ -1,3 +1,113 @@
+body{
+  background-color: aqua;
+}
+.p-box{
+  background-color: lightpink;
+  border:5px solid plum;
+  align-items: center;
+  justify-content: center;
+  width:540px;
+  height:390px;
+  margin-left:600px;
+}
+.mb-3{
+  align-items: center;
+  justify-content: center;
+  background-color: aqua;
+  margin-left: 200px;
+}
+
+.employeeForm{
+margin-left: 120px;
+
+
+}
+
+.btn{
+  background-color: aqua;
+    border-radius: 20px;
+    height: 30px;
+    width: 105px;
+    cursor: pointer;
+    color: mediumvioletred;
+
+}
+.edit{
+  background-color:aqua;
+  color: white;
+  border-radius: 20px;
+  height: 30px;
+  width: 50px;
+  cursor: pointer;
+
+  
+  border:1px solid aqua;
+
+  
+}
+.delete{
+  background-color: maroon;
+  border-radius: 20px;
+  height: 30px;
+  width: 50px;
+  cursor: pointer;
+  color: white;
+
+
+}
+.F-Group{
+  padding:8px;
+  border-radius: 5px;
+  background-color: white;
+  border: 2px solid burlywood;
+}
+h3{
+  background-color: aqua;
+    text-decoration: underline;
+    color: plum;
+    text-align: center;
+ 
+}
+table  {
+  border: 3px solid aquamarine;
+  width: 800px;
+  height: 200px;
+  flex-direction: column row;
+  color:white;
+  background-color:  lightpink;
+}
+.tables{
+  margin-top:70px;
+  margin-left:500px;
+  border: 3px solid aquamarine;
+  width: 800px;
+  height: 200px;
+  flex-direction: column row;
+  color:white;
+  background-color:  lightpink;
+
+}
+td ,th {
+  flex-direction: column row;
+  border:2px solid aqua;
+}
+.refresh{
+  margin-left: 800px;
+  margin-top: 50px;
+  background-color: pink;
+  color:white;
+  padding:8px;
+  border:1px solid aqua;
+  border-radius: 10px;
+}
+span {
+  color: palevioletred;
+}
+  
+
+
+
+
 *{
   margin: 0;
   padding: 0;

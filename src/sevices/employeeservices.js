@@ -1,5 +1,5 @@
-import { db } from "../firebase";
-import employeedataservice from  "../sevices/employeeservices"
+import { db } from "../firebase-config";
+
 
 import {
      collection,
@@ -10,28 +10,28 @@ import {
          deleteDoc,
           doc
          } from "firebase/firestore";
-const employeecollectionRef = collection(db, "employees")
+const employeecollectionRef = collection(db, "Employees");
  class employeedataservice{
-    addEmployee = (newemplyee) =>{
-        return addDoc(employeecollectionRef , newemplyee)
+    addEmployee = (newemployee) => {
+        return addDoc(employeecollectionRef , newemployee);
     };
-    updateEmployee = (id, updateEmployee) =>{
-        const employeeDoc = doc(db, "employees" , id);
-        return updateDoc (employeeDoc, updateEmployee)
+    updateEmployees = (id, updateEmployee) => {
+        const employeeDoc = doc(db, "Employees" , id);
+        return updateDoc (employeeDoc, updateEmployee);
 
     };
-    deleteemployee = (id) =>{
-        const employeeDoc = doc(db, "employees" , id);
-        return deleteDoc(employeeDoc)
+    deleteemployee = (id) => {
+        const employeeDoc = doc(db, "Employees", id);
+        return deleteDoc(employeeDoc);
     };
-    getAllEmployees = () =>{
+    getAllEmployees = () => {
         return getDoc(employeecollectionRef);
     };
-    getEmployee = (id) =>{
-        const employeeDoc = doc(db, "employees", id);
-        return getDocs(employeeDoc)
+    getEmployee = (id) => {
+        const employeeDoc = doc(db, "Employees", id);
+        return getDocs(employeeDoc);
     }
     
 
  }
- export default new EmployeeDataService();
+ export default new employeedataservice();

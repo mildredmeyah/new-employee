@@ -1,36 +1,42 @@
+
+
+
+import {useState} from "react";
+
 import logo from './logo.svg';
 import './App.css';
-
-import React, {useState} from 'react'
-import AddEmployee from './components/addEmployee'
-import DisplayEmployee from './components/displayEmployee';
+import AddEmployee from './components/AddEmployee';
+import EmployeeList from './components/EmployeeList';
 
 
 function App() {
-  const[Name, setName] = useState ([]);
- 
-  const addEmployee = ((Firstname,Lastname, Email)=>{
+  const [employeeId, setEmployeeId] = useState("");
 
-    setName((emp)=> [...emp,{
-      firstname:Firstname,
-      lastname:Lastname,
-      email:Email,
+  const getEmployeeIdHandler = (id) =>{
+    console.log("the id of the document to be edited", id);
+    setEmployeeId(id);
 
-    }])
-
-
-    console.log(Name) ;
-
-
-  })
-  
-
+  };
   return (
-    <div className="container">
+    
+    <div className="App">
+      <div>
+      <div>
+      
+      
+      <AddEmployee id={employeeId} setEmployeeId={setEmployeeId}/>
+      
+      </div>
+      <div>
+
    
-      <AddEmployee add={addEmployee}/>
-      <DisplayEmployee list= {Name}/>
-    </div>
+      <EmployeeList getEmployeeId ={getEmployeeIdHandler}/>
+     
+      
+
+      </div>
+     </div>
+     </div> 
   );
 }
 
